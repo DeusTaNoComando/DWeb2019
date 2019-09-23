@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Itália</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size:16px;}
+  .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+  .w3-half img:hover{opacity:1}
+  .center {display: block;margin-left: auto;margin-right: auto;opacity: 0.8;cursor: pointer}
+  .center:hover{opacity: 1}
+  .fixed {position: fixed;top: 50%;}
+  </style>
+</head>
+
+<body>
+<!-- Menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3  ;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <!-- <a href="#" onclick="return false;"> -->
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Itália</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informações</a>
+    <a href="#desc" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Descrição</a>
+    <a href="#hist" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">História</a>
+    <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demografia</a>
+    <a href="#turi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Turismo</a>
+  </div>
+</nav>
+
+
+<!-- Conteúdo -->
+<div class="w3-cell-row">
+  <!-- Barra central -->
+  <div class="w3-container w3-cell">
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+      <div class="w3-container" style="margin-top:80px" id="inicio">
+        <h1 class="w3-jumbo"><b>Itália</b></h1>
+      </div>
+
+    <!-- Informações -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <p><b>Capital:</b> Roma</p>
+        <p><b>Língua:</b> Italiano</p>
+        <p><b>Área:</b> 301338 km2</p>
+        <p><b>População:</b> 60 665 551 habitantes</p>
+        <p><b>Moeda:</b> Euro</p>
+        <p><b>Presidente atual:</b> Sergio Mattarella</p>
+      </div>
+      <div class="w3-half">
+        <img src="imgs/img1.png" style="width:80%" onclick="onClick(this)">
+      </div>
+    </div>
+
+    <!-- Ampliação de imagens após clique -->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- Descrição -->
+    <div class="w3-container" id="desc" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>Descrição</b></h1>
+      <hr>
+        <p>Itália, oficialmente República Italiana, é uma república parlamentar unitária localizada no centro-sul da Europa. Ao norte, faz fronteira com França, Suíça, Áustria e Eslovénia ao longo dos Alpes. A parte sul consiste na totalidade da península Itálica, Sicília, Sardenha, as duas maiores ilhas no mar Mediterrâneo, e muitas outras ilhas menores ficam no entorno do território italiano. Os Estados independentes de San Marino e do Vaticano são enclaves no interior da Itália, enquanto Campione d'Italia é um ex-clave italiano na Suíça.</p>
+        <p>O território do país abrange cerca de 301 338 km² e a maior parte do seu território tem um clima temperado sazonal. Com 60,8 milhões de habitantes em 2015, é a quinta nação mais populosa da Europa e a 23.ª do mundo.</p>
+        <img src="imgs/img2.png" style="width:60%" class="center" onclick="onClick(this)">
+    </div>
+
+
+    <!-- História -->
+    <div class="w3-container" id="hist" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>História</b></h1>
+      <hr>
+        <p>A história de Itália influenciou fortemente a cultura e o desenvolvimento social, tanto na Europa como no resto do mundo. Foi o berço da civilização etrusca, da Magna Grécia, da civilização romana, da Igreja Católica, das repúblicas marítimas, do humanismo, do Renascimento e do fascismo. Foi o lugar de nascimento de muitos artistas, cientistas, músicos, literatos, exploradores.</p>
+        <p>Até hoje, o que mais ênfase traz ao país são os vestígios da antiga civilização romana que se propagou a toda a Europa:</p>
+        <img src="imgs/img3.png" style="width:60%" class="center" onclick="onClick(this)">
+        <p></p>
+        <img src="imgs/img4.jpg" style="width:60%" class="center" onclick="onClick(this)">
+    </div>
+
+    <!-- Demografia -->
+    <div class="w3-container" id="demo" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>Demografia</b></h1>
+      <hr>
+        <p>Cerca de 95% da população italiana tem origem na península Itálica. Os italianos são descendentes de uma grande quantidade de povos que se estabeleceram na península ao longo da história. Os italianos são uma mistura de povos que já viviam na região, incluindo os povos latinos (a oeste), os sabinos (no vale superior do Tibre), os úmbrios (no centro), os samnitas (no sul), oscos, entre outros, como os etruscos que se estabeleceram no centro do país, os gregos no sul e os celtas no norte.</p>
+        <p>Posteriormente, estabeleceram-se no norte povos germânicos (ostrogodos, visigodos, lombardos) e, no sul, sarracenos (de origem árabe e norte-africana) e os normandos (de origem escandinava). Esses últimos deixaram uma menor influência na população italiana.</p>
+    </div>
+
+
+    <!-- Turismo -->
+    <div class="w3-container" id="turi" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-black"><b>5 Turismo</b></h1>
+      <hr>
+        <p>O turismo também é muito importante para a economia italiana: com mais de 37 milhões de turistas por ano em 2004, a Itália é classificada como o quinto principal destino turístico do mundo. Em 2006, Roma era a terceira cidade mais visitada da União Europeia, sendo constantemente considerada como uma das mais belas cidades antigas do mundo. Veneza também é considerada a cidade mais bonita do mundo, segundo o New York Times, que descreve a cidade como "sem dúvida a mais bela cidade construída pelo homem". O país também foi classificado com tendo a sexta melhor reputação internacional de 2009.</p>
+        <p>Como autor da página e visitante deste país no ano decorrente, confirmo todas as altas expetativas e opiniões fantásticas sobre a cultura e arte presente neste país, nomeadamente nas cidades que visitei.</p>
+        <li><b>Roma</b></li>
+          <img src="imgs/img5.jpg" style="width:60%" class="center" onclick="onClick(this)">
+        <li><b>Florença</b></li>
+          <img src="imgs/img6.jpg" style="width:60%" class="center" onclick="onClick(this)">
+        <p></p>
+        </ol>
+    </div>
+  </div>
+  </div>
+  <!-- Barra direita -->
+  <div class="w3-container w3-red w3-cell w3-cell-middle" style="width:300px;">
+    <div class="fixed">
+      <p>Developed by: <a href="https://github.com/DeusTaNoComando" title="github" target="_blank" class="w3-hover-opacity">José Costa</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Função de ampliação de imagens após clique -->
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+
+</html>
