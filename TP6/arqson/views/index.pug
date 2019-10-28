@@ -1,0 +1,42 @@
+extends layout
+block content
+    .w3-container
+    h1 Arquivo Sonoro
+    .w3-card-4
+            header.w3-container.w3-red
+                h3 Novo item
+            .w3-container
+                form.w3-container(action='/' method='POST' id='form1')
+                    w3-teal
+                        b Província
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='prov' id='prov')
+                    w3-teal
+                        b Local
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='local' id='local')
+                    w3-teal
+                        b Título
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='tit' id='tit')
+                    w3-teal
+                        b Músico
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='musico' id='musico')
+                    input.w3-btn.w3-red(name='enviar' type='submit' value='Adicionar')
+                    input.w3-btn.w3-red(type='hidden' name='update' value='Atualizar' onclick="updateItem(document.getElementById('prov').value,document.getElementById('local').value,document.getElementById('tit').value,document.getElementById('musico').value)")
+            .w3-card-4
+                table.w3-table-all
+                    tr  
+                        th Província
+                        th Local
+                        th Título
+                        th Músico
+                    each a in lista
+                        tr
+                            td= a.prov
+                            td= a.local
+                            td= a.tit
+                            td= a.musico
+                            td
+                                button.w3-button(onclick="apagaItem('" + a.tit + "')" class='fa fa-trash')
+                            td 
+                                button.w3-button(onclick="verItem('" + a.tit + "')" class='fa fa-edit')
+            footer.w3-container.w3-red
+                address Gerado por Arquivo Sonoro App by José Costa

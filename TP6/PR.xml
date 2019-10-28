@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "C:\Users\jocos\Desktop\UNI\DAW\PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TP6-DAW</keyname>
+        <title>Construção de uma aplicação para arquivos sonoros</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Outubro 2019</bdate>
+        <edate>Outubro 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A82136</identifier>
+            <name>José Luís Sousa Costa</name>
+            <email>a82136@alunos.uminho.pt</email>
+            <git>https://github.com/DeusTaNoComando</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>O sexto trabalho prático consistiu na criação de aplicação para arquivos sonoros em que fosse possível listar todos os registos, listar cada registo individualmente, inserir novos arquivos e atualizar arquivos existentes.</p>
+        <p>Para a listagem de todos os registos basta aceder a página inicial e aparecerão todos os registos guardados até ao momento.</p>
+        <p>No que toca à listagem de um registo foi criado um botão "Ver" e quando clicado as suas informações aparecem no formulário da página.</p>
+        <p>Para a inserção de um novo registo basta preencher o formulário cujo título é "Novo Item"</p>
+        <p>Para atualização de um registo já existente o utilizador deverá carregar em "Ver" para que as suas informações apareçam no formulário e depois disso poderá alterar todos os campos à exceção do campo Título visto que este funciona como identificador único da música.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.html">HTML do Project Record</deliverable>
+        <deliverable path="PR.xml">XML do Project Record</deliverable>
+        <deliverable path="arqson/routes/index.js">Tratamento de todos os pedidos que chegam ao servidor</deliverable>
+        <deliverable path="arqson/views/layout.pug">Layout da aplicação</deliverable>
+        <deliverable path="arqson/arqson.json">Ficheiro da Base de Dados</deliverable>
+        <deliverable path="arqson/public/javascripts/ver.js">Função para ver um registo individual</deliverable>
+        <deliverable path="arqson/public/javascripts/apagar.js">Função para apagar um registo</deliverable>
+        <deliverable path="arqson/public/javascripts/update.js">Função para atualizar um registo</deliverable>
+    </deliverables>
+</pr>
