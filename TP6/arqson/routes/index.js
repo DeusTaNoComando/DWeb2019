@@ -66,8 +66,12 @@ router.post('/', function(req,res){
     if(!erro){
       arqson.push(req.body)
       jsonfile.writeFile(myBD, arqson,erro=>{
-        if(erro) console.log(erro)
-        else console.log('Registo gravado com sucesso')
+        if(erro) {
+          console.log(erro)
+        }
+        else {
+          console.log('Registo gravado com sucesso')
+        }
       })
     }
   })
