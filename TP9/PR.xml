@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "C:\Users\jocos\Desktop\UNI\DAW\PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TP9-DAW</keyname>
+        <title>Desenvolvimento do mongoimport em Node.js</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Novembro 2019</bdate>
+        <edate>Novembro 2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A82136</identifier>
+            <name>José Luís Sousa Costa</name>
+            <email>a82136@alunos.uminho.pt</email>
+            <git>https://github.com/DeusTaNoComando</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            Este trabalho consistiu no desenvolvimento da funcionalidade <i>mongoimport</i>, disponibilizada pelo <b>MongoDB</b>.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Project Record deste TPC</deliverable>
+        <deliverable path="PR.html">Versão HTML do Project Record deste TPC</deliverable>
+        <deliverable path="mongoimport.js">Implementação do mongoimport</deliverable>
+        <deliverable path="dataSingle.json">Objeto em JSON</deliverable>
+        <deliverable path="dataMultiple.json">Array de Objetos em JSON</deliverable>
+    </deliverables>
+</pr>
