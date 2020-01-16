@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "C:\Users\jocos\Desktop\UNI\DAW\PR.dtd">
+<pr>
+    <metadata>
+        <keyname>TESTE-DAW</keyname>
+        <title>Teste de avaliação de DAW</title>
+        <supervisor homepage="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+        <bdate>Janeiro 2020</bdate>
+        <edate>Janeiro 2020</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>A82136</identifier>
+            <name>José Luís Sousa Costa</name>
+            <email>a82136@alunos.uminho.pt</email>
+            <git>https://github.com/DeusTaNoComando</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>
+            O primeiro exercicio consistiu no uso da funcionalidade <i>mongoimport</i>, disponibilizada pelo <b>MongoDB</b> com a flag jsonArray para importar os dados para a BD: correr o comando mongoimport --db arquivoDAW --collection arquivoDAW --file C:\Users\jocos\Desktop\UNI\DAW\DWeb2019\TESTE\obrasApp\arquivo-musica-digital.json --jsonArray.
+        </p>
+        <p>
+            De seguida, foi criada uma API de dados que consumisse estes que foram importados.
+        </p>
+        <p>
+            No segundo exercicio foi criado um ficheiro .txt com as respostas às questoes do Postman e de seguida foi criada uma interface em que a leitura dos dados é feita através do AXIOS e, através do PUG, é criada uma página web que exponha a estrutura das entidades.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="PR.xml">Project Record deste TPC</deliverable>
+        <deliverable path="PR.html">Versão HTML do Project Record deste TPC</deliverable>
+        <deliverable path="obrasApp/">Exercicio 1</deliverable>
+        <deliverable path="clavApp/">Exercicio 2</deliverable>
+    </deliverables>
+</pr>

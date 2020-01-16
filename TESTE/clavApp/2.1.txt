@@ -1,0 +1,51 @@
+2.1- Resposta = 546 elementos
+
+2.2-
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_ACT/tipologias
+[
+    {
+        "sigla": "AP",
+        "designacao": "Administração Pública",
+        "id": "tip_AP"
+    },
+    {
+        "sigla": "ASF",
+        "designacao": "Autoridades de supervisão e fiscalização",
+        "id": "tip_ASF"
+    }
+]
+
+Resposta = A entidade Autoridade para as Condições de Trabalho corresponde às tipologias Administração Pública e Autoridades de supervisão e fiscalização
+
+2.3-
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_ANSR/intervencao/participante
+
+[
+    {
+        "tipoPar": "temParticipanteApreciador",
+        "codigo": "450.10.214",
+        "titulo": "Licenciamento ou comunicação de publicidade"
+    },
+    {
+        "tipoPar": "temParticipanteIniciador",
+        "codigo": "400.10.056",
+        "titulo": "Registo nacional de condutores"
+    }
+]
+
+Resposta = A Autoridade Nacional de Segurança Rodoviária participa como iniciador no Registo nacional de condutores
+
+2.4-
+
+http://clav-api.dglab.gov.pt/api/entidades/ent_CMil/intervencao/dono
+
+[
+    {
+        "codigo": "750.20.601",
+        "titulo": "Realização de atividades de formação e treino animal"
+    }
+]
+
+Resposta = A entidade Colegio Militar é dona do processo de Realização de atividades de formação e treino animal
